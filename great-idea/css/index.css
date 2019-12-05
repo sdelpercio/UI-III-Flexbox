@@ -31,7 +31,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: circle;
 }
 blockquote, q {
 	quotes: none;
@@ -169,12 +169,17 @@ address {
 	text-align: center;
 }
 
+
+
+
 /* SERVICES.HTML STYLES START HERE */
 
 /* NAV STYLES HERE */
 #navbar a {
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	padding-left: 4%;
 }
 #navbar a img {
 	width: 100%;
@@ -186,6 +191,71 @@ address {
 .services-header-img {
 	display: flex;
 	justify-content: center;
+	padding: 4%;
 }
 
 /* SERVICES HEADING STYLES HERE */
+#services-section {
+	display: flex;
+	flex-direction: column;
+	margin: 0% 25%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+}
+#services-section h1 {
+	font-size: 28px;
+}
+
+/* CARDS SECTION STYLES HERE */
+#cards-section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 2% 25%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+}
+.card {
+	width: 40%;
+	padding: 1%;
+	margin-bottom: 2%;
+	background-image: linear-gradient(#9A9A9A, white); 
+}
+.card h2 {
+	font-size: 18px;
+}
+.learnmore {
+	width: 30%;
+	margin-top: 2%;
+	background-color: #3E3E3E;
+	color: white;
+	font-size: 15px;
+	padding: 10px 15px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+/* FACTS SECTION STYLES HERE */
+#facts-section {
+	margin: 0% 25%;
+	padding-top: 2%;
+}
+#facts {
+	display: flex;
+	justify-content: space-between;
+}
+#facts-text {
+	width: 50%;
+}
+#facts-text h2 {
+	font-size: 18px;
+}
+#facts-text ul li {
+	display: list-item;
+	margin-left: 8%;
+	margin-top: 4%;
+}
+.services-info-img {
+	max-width: 100%;
+	height: auto;
+}
