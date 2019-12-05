@@ -49,7 +49,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid black;
+	
 }
 
 html, body {
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 
 /* GENERAL STYLES HERE */
 section {
-	margin: 0% 15%;
+	margin: 0% 20%;
 }
 /* NAVBAR STYLES HERE */
 #navbar {
@@ -86,7 +86,7 @@ section {
 }
 #navbar img {
 	width: 20%;
-	height: 8vh;
+	height: 6vh;
 	align-self: center;
 }
 .anim:hover {
@@ -108,7 +108,10 @@ section {
 /* HEADING STYLES HERE */
 #heading {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin: 2% 20%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
 }
 #heading-text {
 	width: 50%;
@@ -120,6 +123,10 @@ section {
 }
 #heading-text p {
 	font-size: 15px;
+	border: 1px solid black;
+	width: 50%;
+	padding: 8px 0px;
+	align-self: center;
 }
 #heading-img img {
 	max-width: 100%;
@@ -127,23 +134,33 @@ section {
 }
 
 /* FEATURES STYLES HERE */
+
 .big-container1 {
 	display: flex;
-	width: 40%
+	justify-content: space-between;
+	margin: 2% 0%;
 }
-.small-container {
-	
+.big-container2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 2% 0%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+}
+.small-container-top {
+	width: 48%;
+}
+.small-container-bot {
+	width: 30%;
 }
 #features-img {
 	text-align: center;
+
 }
 #services, #product, #vision {
 	
 }
-.bot {
-	border-bottom: 1px solid black;
-	
-}
+
 /* CONTACT STYLES HERE */
 address {
 	text-align: left;
