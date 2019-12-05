@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +48,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid black;
 }
 
 html, body {
@@ -63,4 +63,93 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+/* GENERAL STYLES HERE */
+section {
+	margin: 0% 15%;
+}
+/* NAVBAR STYLES HERE */
+#navbar {
+	display: flex;
+	height: 10vh;
+}
+#navbar nav{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#navbar nav > a {
+	text-decoration: none;
+	color: gray;
+}
+#navbar img {
+	width: 20%;
+	height: 8vh;
+	align-self: center;
+}
+.anim:hover {
+	animation: jump 0.5s;
+	animation-timing-function: ease;
+}
+@keyframes jump {
+	0% {
+		transform: translate3D(0, 0, 0);
+	}
+	50% {
+		transform: translate3D(0, -30px, 0);
+	}
+	100% {
+		transform: translate3D(0, 0, 0);
+	}
+}
+
+/* HEADING STYLES HERE */
+#heading {
+	display: flex;
+	justify-content: center;
+}
+#heading-text {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 70px;
+}
+#heading-text p {
+	font-size: 15px;
+}
+#heading-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* FEATURES STYLES HERE */
+.big-container1 {
+	display: flex;
+	width: 40%
+}
+.small-container {
+	
+}
+#features-img {
+	text-align: center;
+}
+#services, #product, #vision {
+	
+}
+.bot {
+	border-bottom: 1px solid black;
+	
+}
+/* CONTACT STYLES HERE */
+address {
+	text-align: left;
+	margin-bottom: 3%;
+}
+#copyright {
+	margin: 5% 5% 10% 5%;
+	text-align: center;
+}
