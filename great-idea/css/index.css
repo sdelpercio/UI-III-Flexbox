@@ -49,7 +49,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	
+	border: 1px solid black;
 }
 
 html, body {
@@ -89,6 +89,7 @@ section {
 	height: 6vh;
 	align-self: center;
 }
+
 .anim:hover {
 	animation: jump 0.5s;
 	animation-timing-function: ease;
@@ -157,9 +158,6 @@ section {
 	text-align: center;
 
 }
-#services, #product, #vision {
-	
-}
 
 /* CONTACT STYLES HERE */
 address {
@@ -170,3 +168,24 @@ address {
 	margin: 5% 5% 10% 5%;
 	text-align: center;
 }
+
+/* SERVICES.HTML STYLES START HERE */
+
+/* NAV STYLES HERE */
+#navbar a {
+	display: flex;
+	align-items: center;
+}
+#navbar a img {
+	width: 100%;
+	height: 6vh;
+	align-self: center;
+}
+
+/* HEADER IMAGE STYLES HERE */
+.services-header-img {
+	display: flex;
+	justify-content: center;
+}
+
+/* SERVICES HEADING STYLES HERE */
